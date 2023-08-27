@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+       <app-pass-count></app-pass-count>
+        
+        <p class="alert alert-info"
+        *ngFor="let pass of passengerInfo"
+        >
+            {{pass.fullname}}
+        </p>
+        
+        <!-- // passenger cards  -->
+        <app-pass-card [passInfo]="pass" *ngFor="let pass of passengerInfo"></app-pass-card>
+        
+    </div>
+</div>
